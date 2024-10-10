@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicio de Limpieza de Colchones</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="/css/estilo.css">
+    <link rel="stylesheet" href="/javascript/javascript.js">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="/imagenes/TU MEJOR MEDICINA.jpg" alt="Logo" width="100" height="100">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre-nosotros">Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reservas">Reservas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="inicio" class="container mt-4">
+        <h1 class="text-center">Limpieza Profesional de Colchones</h1>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/imagenes/ofin perros colchones services.jpg" class="d-block w-100" alt="Servicio de limpieza 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="/placeholder.svg?height=400&width=800" class="d-block w-100" alt="Servicio de limpieza 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="/placeholder.svg?height=400&width=800" class="d-block w-100" alt="Servicio de limpieza 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="container mt-4">
+        <section id="sobre-nosotros">
+            <h2>Bienvenido a nuestro sitio web</h2>
+            <p>Somos expertos en la limpieza de colchones, ofreciendo un servicio profesional y de calidad para mantener tu hogar limpio y saludable.</p>
+        </section>
+
+        <section id="operadores" class="row mt-4">
+            <div class="col-md-6">
+                <img src="/placeholder.svg?height=300&width=400" alt="Operador 1" class="img-fluid">
+                <h3>Operador 1</h3>
+                <p>Nuestro operador especializado en limpieza profunda de colchones.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="/placeholder.svg?height=300&width=400" alt="Operador 2" class="img-fluid">
+                <h3>Operador 2</h3>
+                <p>Experto en eliminación de ácaros y alergenos de los colchones.</p>
+            </div>
+        </section>
+
+        <section id="servicios" class="mt-4">
+            <h2>Descripción del servicio de limpieza</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="/placeholder.svg?height=300&width=400" alt="Servicio de limpieza" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <p>Nuestro servicio de limpieza de colchones incluye:</p>
+                    <ul>
+                        <li>Aspirado profundo</li>
+                        <li>Tratamiento anti-ácaros</li>
+                        <li>Eliminación de manchas</li>
+                        <li>Desodorización</li>
+                        <li>Sanitización UV</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="reservas" class="mt-4">
+            <h2>Reserva tu cita</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="calendario"></div>
+                </div>
+                <div class="col-md-6">
+                    <form id="reserva-form">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="apellidos" class="form-label">Apellidos</label>
+                            <input type="text" class="form-control" id="apellidos" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefono" class="form-label">Teléfono</label>
+                            <input type="tel" class="form-control" id="telefono" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="direccion" class="form-label">Dirección</label>
+                            <input type="text" class="form-control" id="direccion" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="tipo-objeto" class="form-label">Tipo de objeto</label>
+                            <select class="form-select" id="tipo-objeto" required>
+                                <option value="">Seleccione una opción</option>
+                                <option value="colchon">Colchón</option>
+                                <option value="sofa">Sofá</option>
+                                <option value="sillon">Sillón</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="medidas" class="form-label">Medidas</label>
+                            <select class="form-select" id="medidas" required>
+                                <option value="">Seleccione una opción</option>
+                                <option value="individual">Individual</option>
+                                <option value="matrimonial">Matrimonial</option>
+                                <option value="king">King</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="mt-4">
+            <h2>Contacto</h2>
+            <form id="contacto-form">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="contacto-nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="contacto-nombre" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="contacto-apellidos" class="form-label">Apellidos</label>
+                        <input type="text" class="form-control" id="contacto-apellidos" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="contacto-email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="contacto-email" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="contacto-telefono" class="form-label">Teléfono</label>
+                        <input type="tel" class="form-control" id="contacto-telefono" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="contacto-mensaje" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="contacto-mensaje" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-light mt-4 py-3">
+        <div class="container text-center">
+            <p>&copy; 2023 Servicio de Limpieza de Colchones. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            flatpickr("#calendario", {
+                inline: true,
+                minDate: "today",
+                dateFormat: "Y-m-d",
+                onChange: function(selectedDates, dateStr, instance) {
+                    console.log("Fecha seleccionada:", dateStr);
+                }
+            });
+
+            document.getElementById('reserva-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                console.log("Formulario de reserva enviado");
+                // Aquí puedes agregar la lógica para procesar la reserva
+            });
+
+            document.getElementById('contacto-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                console.log("Formulario de contacto enviado");
+                // Aquí puedes agregar la lógica para procesar el formulario de contacto
+            });
+        });
+    </script>
+</body>
+</html>
